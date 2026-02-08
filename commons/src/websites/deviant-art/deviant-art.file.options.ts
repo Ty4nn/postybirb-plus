@@ -17,6 +17,11 @@ export class DeviantArtFileOptionsEntity
   @Expose()
   @IsBoolean()
   @DefaultValue(false)
+  AddWatermark!: boolean;
+
+  @Expose()
+  @IsBoolean()
+  @DefaultValue(false)
   freeDownload!: boolean;
 
   @Expose()
@@ -46,8 +51,28 @@ export class DeviantArtFileOptionsEntity
 
   @Expose()
   @IsBoolean()
-  @DefaultValue(true)
+  @DefaultValue(false)
   noAI!: boolean;
+
+  @Expose()
+  @IsBoolean()
+  @DefaultValue(false)
+  isExclusive!: boolean;
+
+  @Expose()
+  @IsBoolean()
+  @DefaultValue(false)
+  isPremiumDownload!: boolean;
+
+  @Expose()
+  @IsBoolean()
+  @DefaultValue(false)
+  isSubscribers!: boolean;
+
+  @Expose()
+  @IsBoolean()
+  @DefaultValue(false)
+  isPremiumGallery!: boolean;
 
   @Expose()
   @IsBoolean()
