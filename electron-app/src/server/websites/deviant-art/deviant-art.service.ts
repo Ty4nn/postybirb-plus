@@ -192,6 +192,11 @@ export class DeviantArt extends Website {
 
     const updateBody: any = {
       allow_comments: data.options.disableComments ? false : true,
+      add_watermark: data.options.AddWatermark ? false : true,
+      is_exclusive: data.options.isExclusive ? false : true,
+      is_premium_download: data.options.isPremiumDownload ? false : true,
+      is_subscribers: data.options.isSubscribers ? false : true,
+      is_premium_gallery: data.options.isPremiumGallery ? false : true,
       allow_free_download: data.options.freeDownload ? true : false,
       deviationid: fileUpload.body.deviationId,
       da_minor_version: 20230710,
