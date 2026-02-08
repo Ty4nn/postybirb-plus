@@ -172,6 +172,31 @@ export class DeviantArtFileSubmissionForm extends GenericFileSubmissionSection<D
           Send to scraps
         </Checkbox>
       </div>,
+      <div>
+        <Checkbox checked={data.AddWatermark} onChange={this.handleCheckedChange.bind(this, 'AddWatermark')}>
+          Add Watermark
+        </Checkbox>
+      </div>,
+      <div>
+        <Checkbox checked={data.isExclusive} onChange={this.handleCheckedChange.bind(this, 'isExclusive')}>
+          is Exclusive
+        </Checkbox>
+      </div>,
+      <div>
+        <Checkbox checked={data.isPremiumDownload} onChange={this.handleCheckedChange.bind(this, 'isPremiumDownload')}>
+          is Premium Download
+        </Checkbox>
+      </div>,
+      <div>
+        <Checkbox checked={data.isSubscribers} onChange={this.handleCheckedChange.bind(this, 'isSubscribers')}>
+          is Subscribers
+        </Checkbox>
+      </div>,
+      <div>
+        <Checkbox checked={data.isPremiumGallery} onChange={this.handleCheckedChange.bind(this, 'isPremiumGallery')}>
+          is PremiumGallery
+        </Checkbox>
+      </div>,
     );
     return elements;
   }
